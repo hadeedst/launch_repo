@@ -1,0 +1,26 @@
+def calc
+
+  puts "Enter 2 numbers"
+  num1 = gets.chomp.to_f
+  num2 = gets.chomp.to_f
+  puts "what opperation would you like to preform?"
+
+  opp = gets.chomp.to_s.downcase
+
+  if opp == "addition"
+    ans = num1 + num2
+    return "#{num1} + #{num2} is #{ans}"
+  elsif opp == "subtraction"
+    ans = num1 - num2
+    return "#{num1} - #{num2} is #{ans}"
+  elsif opp == "multiplication"
+    ans = num1 * num2
+    return "#{num1} * #{num2} is #{ans}"
+  elsif opp == "division"
+    ans = num1/num2
+    return "#{num1} / #{num2} is #{ans}"
+  else
+    return "invalid opperation"
+  end
+end
+
