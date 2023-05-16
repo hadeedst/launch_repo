@@ -1,7 +1,8 @@
 def calc
 
-  puts "Enter 2 numbers"
+  puts "Enter the first number"
   num1 = gets.chomp.to_f
+
   num2 = gets.chomp.to_f
   puts "what opperation would you like to preform?"
 
